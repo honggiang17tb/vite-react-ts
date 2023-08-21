@@ -11,7 +11,8 @@
         "lint:fix": "eslint --fix --ext js,jsx,ts,tsx src/",
         "prettier": "prettier --check \"src/**/(*.tsx|*.ts|*.jsx|*.js|*.scss|*.css)\"",
         "prettier:fix": "prettier --write \"src/**/(*.tsx|*.ts|*.jsx|*.js|*.scss|*.css)\"",
-        "postinstall": "husky install"
+        "postinstall": "husky install",
+        "theme": "chakra-cli tokens src/theme/index.ts"
     },
     "lint-staged": {
         "*.+(ts|tsx)": [
@@ -19,10 +20,15 @@
         ]
     },
     "dependencies": {
+        "@chakra-ui/react": "^2.8.0",
+        "@emotion/react": "^11.11.1",
+        "@emotion/styled": "^11.11.0",
+        "framer-motion": "^10.16.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
     },
     "devDependencies": {
+        "@chakra-ui/cli": "^2.4.1",
         "@commitlint/cli": "^17.7.1",
         "@commitlint/config-conventional": "^17.7.0",
         "@types/node": "^20.5.1",

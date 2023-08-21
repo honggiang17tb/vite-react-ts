@@ -29,6 +29,7 @@ module.exports = {
                 singleQuote: true,
             },
         ],
+        'import/no-unresolved': ['off'],
     },
     settings: {
         react: { version: 'detect' },

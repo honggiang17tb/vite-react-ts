@@ -12,7 +12,8 @@
         "prettier": "prettier --check \"src/**/(*.tsx|*.ts|*.jsx|*.js|*.scss|*.css)\"",
         "prettier:fix": "prettier --write \"src/**/(*.tsx|*.ts|*.jsx|*.js|*.scss|*.css)\"",
         "postinstall": "husky install",
-        "theme": "chakra-cli tokens src/theme/index.ts"
+        "theme": "chakra-cli tokens src/theme/index.ts",
+        "theme:watch": "chakra-cli tokens src/theme/index.ts --watch"
     },
     "lint-staged": {
         "*.+(ts|tsx)": [
@@ -23,6 +24,7 @@
         "@chakra-ui/react": "^2.8.0",
         "@emotion/react": "^11.11.1",
         "@emotion/styled": "^11.11.0",
+        "@mantine/hooks": "^6.0.19",
         "framer-motion": "^10.16.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"

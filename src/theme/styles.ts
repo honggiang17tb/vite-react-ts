@@ -4,7 +4,7 @@ export const styles = {
     global: (props: StyleFunctionProps) => ({
         html: {},
         body: {
-            bg: mode('white', 'blackAlpha.50')(props),
+            bg: mode('white', '#000723')(props),
         },
     }),
 };

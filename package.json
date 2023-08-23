@@ -11,7 +11,9 @@
         "lint:fix": "eslint --fix --ext js,jsx,ts,tsx src/",
         "prettier": "prettier --check \"src/**/(*.tsx|*.ts|*.jsx|*.js|*.scss|*.css)\"",
         "prettier:fix": "prettier --write \"src/**/(*.tsx|*.ts|*.jsx|*.js|*.scss|*.css)\"",
-        "postinstall": "husky install"
+        "postinstall": "husky install",
+        "theme": "chakra-cli tokens src/theme/index.ts",
+        "theme:watch": "chakra-cli tokens src/theme/index.ts --watch"
     },
     "lint-staged": {
         "*.+(ts|tsx)": [

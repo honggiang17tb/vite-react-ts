@@ -30,6 +30,7 @@ module.exports = {
             },
         ],
         'import/no-unresolved': ['off'],
+        'react/no-unknown-property': ['off'],
     },
     settings: {
         react: { version: 'detect' },
